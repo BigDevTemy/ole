@@ -1,23 +1,38 @@
 import logo from './logo.svg';
-import './App.css';
+import './assets/css/App.css'
+import localRoutes from './route'
+import {BrowserRouter, Switch,Route} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {GlobalProvider} from './context/Provider'
+
+const RenderRoute=(route)=>{
+  
+  document.title = route.title || 'OceanLink'
+  
+   return  <Route 
+            path={route.path} 
+            exact 
+            render={(props)=><route.component {...props} />}
+            />
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalProvider>
+        <BrowserRouter>
+          <Switch>
+              { localRoutes.map((route,index)=>{
+                  
+                return (
+                        
+                        <Route key={index} exact path={route.path} render={(props)=><route.component {...props}/>}/>
+                        )
+              })}
+          </Switch>
+        </BrowserRouter>
+      </GlobalProvider>
     </div>
   );
 }

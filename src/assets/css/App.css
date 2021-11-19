@@ -1,0 +1,1349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+.App {
+  text-align: center;
+}
+
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+.slider-height{
+  height: 70vh;
+}
+.CarouselDiv{
+  width:100%;
+  height: 50vh;
+}
+.active{
+  color:#fff;
+  border-bottom: 1px solid #1760a6;
+}
+body{
+ background-color:  #fff;
+ color: #000;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+  
+}
+Nav > Link{
+  padding:20px;
+  color:#fff;
+}
+
+.service-tag-i{
+  padding-left: 50px;
+}
+
+.carousel_me{
+  width:800px;
+  height:300px;
+  align-self:center;
+  margin:auto;
+  padding:40px;
+  margin-top: 40px;
+}
+.carousel_item_me{
+  height: 400px;
+}
+.caption-text{
+  font-size: 18px;
+  font-family: Poppins;
+}
+
+.divHeader{
+  width:100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2001;
+  
+
+}
+
+.divHeaderScroll{
+  width:100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+ 
+}
+.divContainer{
+  width:100%;
+  height: 50vh;
+  /* height: 100vh; */
+  position: relative;
+  text-align: center;
+  
+
+  
+}
+.quote{
+  width:100px;
+  height: 50px;
+  background-color:#1760a6 ;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.Navbar{
+  width:'100%'; 
+  height: 100px;
+}
+
+.NavScroll{
+  width:'100%' ;
+  height: 100px;
+  background-color: #fff;
+}
+
+.NavContact{
+  width:'100%' ;
+  height: 100px;
+  background-color: #1760a6;
+}
+
+.NavContactScroll{
+  width:'100%' ;
+  height: 100px;
+  color: #fff;
+  background-color: #1760a6;
+}
+.logo{
+  width: 80%;
+  margin-top: 10px;
+  
+}
+
+
+
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  border-bottom: 2px solid #1760a6;
+  color:#fff;
+  
+}
+.readmore:hover{
+  background: #1760a6;
+  color: #fff;
+}
+.logoDiv:hover{
+  border-bottom: none;
+}
+.NavRight{
+  padding:20px !important;
+  color:#fff !important;
+  text-decoration: none;
+}
+.NavRightScroll{
+  padding:20px !important;
+  color:#000 !important;
+  text-decoration: none;
+}
+
+
+.carousel-caption{
+  top:35%
+}
+
+
+
+/* .carousel-indicators {
+  width: initial; 
+  margin-left: initial;
+  left: initial;
+  color: rgb(207, 189, 189);
+  right: 10px;
+  top: 78vh; 
+} */
+.carousel-caption > h1{
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+.servicesMain{
+  width:100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #F3F6F5;
+  padding:40px;
+  
+  /* padding-top:40px;
+  padding-bottom: 40px;
+  padding-left: 110px;
+  padding-right: 80px; */
+
+}
+
+.howwedo{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-image: url('../images//nice_world.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  opacity: 0.9;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.service-tag{
+  display: flex;
+  height:50vh;
+  justify-content: space-between;
+}
+
+.servicesMain > h1{
+  padding:20px;
+  font-family: Poppins cursive;
+  font-size: 50px;
+
+}
+.servicesDiv{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 120;
+  position: absolute;
+  padding-right: 40px;
+
+}
+
+.ourservices{
+  height: 400px;
+  flex: 1 0 calc(21% - 10px);
+  color: #000;
+  margin:20px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  text-align: center;
+}
+
+.cardimg{
+  margin-top: 50px;
+}
+.cardTitle{
+  padding:10px;
+  font-size: 18px;
+  font-family: candara;
+}
+.cardBody{
+  padding:10px;
+  font-size: 14px;
+  font-family: candara;
+}
+.serviceTop{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.serviceTopI{
+  background-color: #1760a6;
+  color: #fff;
+  width: 30%;
+  height:160px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+
+}
+
+.serviceTopII{
+  background-color: #31373F;
+  color: #fff;
+  width: 30%;
+  height:160px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  
+}
+
+.spaceOverlap{
+  padding-left: 15px;
+}
+.overlappImage{
+  width: 95%;
+  align-items: center;
+  
+}
+
+.over{
+  /* background-color: #0E49AC; */
+  width: 100%;
+  margin-top: -80px;
+  position: absolute;
+  z-index: 2000;
+  
+}
+
+.time{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Poppin';
+}
+.time_details{
+  font-size: 16px;
+  
+}
+.createButton{
+  width:150px;
+  height: 40px;
+  font-size: 14px;
+  border: 2px solid #1760a6;
+  align-self: center;
+  font-family: candara;
+  border-bottom-right-radius: 15px;
+  line-height: 40px;
+  
+}
+
+.createButton_services{
+  width:150px;
+  height: 40px;
+  font-size: 14px;
+  border: 2px solid #1760a6;
+  align-self: center;
+  font-family: candara;
+  border-bottom-right-radius: 15px;
+  line-height: 40px;
+  margin: auto;
+}
+
+.createButton{
+  width:150px;
+  height: 40px;
+  font-size: 14px;
+  border: 2px solid #1760a6;
+  align-self: center;
+  font-family: candara;
+  border-bottom-right-radius: 15px;
+  margin-top: auto;
+  line-height: 40px;
+}
+
+.readmore{
+  width:150px;
+  height: 40px;
+  font-size: 14px;
+  border: 2px solid #1760a6;
+  align-self: center;
+  font-family: candara;
+  border-bottom-right-radius: 15px;
+  line-height: 40px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.createButtonOthers{
+  width:150px;
+  height: 40px;
+  font-size: 14px;
+  border: 2px solid #1760a6;
+  align-self: center;
+  font-family: candara;
+  border-bottom-right-radius: 15px;
+  line-height: 40px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  bottom: 80px;
+}
+
+.createButtonOthers:hover{
+  background-color: #1760a6;
+  color: #fff;
+}
+
+.transportservices{
+  font-size: 16px;
+  font-family: Poppins;
+  text-align:justify !important;
+  padding-right: 100px;
+}
+
+
+.buttonParentDiv{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+
+.createButton:hover{
+  background-color: #1760a6;
+  color: #fff;
+}
+
+.AboutUs{
+  width:100%;
+  height: 100vh;
+  padding-left:40px;
+  padding-right:40px;
+  background: #fff;
+  align-self: center;
+}
+.AboutusDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+.aboutusText_small{
+  flex:1 0 calc(50% -25px);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#d5d5d5;
+  text-align: left;
+  
+
+}
+
+
+
+
+.aboutusHeader{
+  font-size: 25px;
+  font-family:Poppins;
+  font-weight: bold;
+  
+}
+
+.aboutHeader{
+  margin-top: 20px;
+}
+
+.oceanlink {
+  color:#1760a6
+}
+.express{
+  color: #ff0000;
+}
+
+.aboutus-text1{
+  margin-top:10px;
+  font-weight: bold;
+  text-align: left;
+}
+.aboutus-text2{
+  color: #31373F;
+  font-family: candara;
+  font-weight: bold;
+  text-align: left;
+
+}
+.aboutus-text3{
+  text-align:justify;
+  margin-bottom: 10px;
+}
+.readMoreParent{
+  text-align: left;
+  width: 100%;
+}
+.aboutusImg{
+  position: relative;
+  flex: 1 0 calc(25%);
+}
+
+.aboutusImg > img{
+  width:80%;
+}
+
+.aboutusText{
+  flex:1 0 calc(50%);
+  margin-left: 30px;
+}
+
+.aboutus-Img > img{
+  width: 50%;
+  height: 50%;
+}
+.faster{
+  width:200px;
+  height: 80px;
+  font-size: 14px;
+  border: 2px solid #1760a6;
+  background-color:#1760a6 ;
+  font-family: Poppins cursive;
+  border-bottom-right-radius: 15px;
+  margin: auto;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  top: 80%;
+  left: 58%;
+  position: absolute;
+}
+.howwedo_main{
+  padding: 100px;
+  width: 100%;
+  height: 100vh;
+}
+.aboutusText_big{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif cursive;
+  font-weight: bolder;
+  color: #fff;
+  text-align: left;
+}
+
+.howwedoText_small{
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#d5d5d5;
+  text-align: left;
+
+}
+
+.services_big{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif cursive;
+  font-weight: bolder;
+  color: #1760a6;
+  text-align: left;
+}
+
+.model_howwework{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.model_howwework_details{
+  /* flex: 1 0 21%;  */
+  flex: 1 0 calc(25% - 10px);
+  margin: 5px;
+  height: 100px;
+  text-align: left;
+  padding:10px;
+}
+
+.model_howwework_details > span{
+  font-size: 80px;
+  font-weight: bold;
+  color:#1760a6;
+}
+
+.model_howwework_details > div{
+
+  color:#fff;
+  font-family: candara;
+
+}
+
+.model_howwework_details > div >span{
+
+  color:#fff;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.whatwedo{
+  width:100%;
+  height: 100vh;
+  text-align: center;
+  padding: 40px;
+  background: #f8f9fe;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.whatwedo_big{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #1760a6;
+ 
+}
+.whatwedoText{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 5%;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: justify;
+}
+
+.whatwedo_small{
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#d5d5d5;
+ 
+}
+
+
+
+
+.IrregularCircle{
+  flex: 1 0 calc(30% - 20px);
+  border: 1px solid #1eae98;
+  border-radius: 20% 50% 30% 80% /40% 50% 35% 60%;
+  height: 300px;
+  justify-content: center;
+  background-image: url('../images/whatwedo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-self: center;
+ 
+}
+
+.IrregularText{
+  flex: 1 0 calc(70% - 20px);
+  padding: 30px;
+  font-family: candara;
+  font-size: 22px;
+  align-items: center;
+  text-align: justify;
+  align-self: center;
+}
+
+.quoteDiv{
+  width:100%;
+  margin-top: 40px;
+  height: 100vh;
+  background-image: url('../images/quote_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:40px
+}
+
+.quoteMainDiv{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding:40px;
+}
+
+
+.form{
+  flex: 1 0 calc(50% - 20px);
+  background:#fff;
+  padding:30px;
+  text-align: left;
+  height: 100%;
+  align-items: center;
+ 
+}
+
+.formText{
+  flex: 1 0 calc(50% - 20px); 
+  text-align: left;
+  padding-left: 30px;
+  align-self: center;
+  
+}
+
+
+.contact_us_big{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif cursive;
+  font-weight: bolder;
+  color: #fff;
+  text-align: left;
+}
+
+.getInTouch{
+  font-size: 30px;
+  font-family: candara;
+  font-weight: bolder;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contactCard{
+  width:100%;
+  height: 200px;
+  border: 1px solid #1eae98;
+  background:#1eae98;
+  align-items: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.mycard{
+  width: 80%;
+  background:#1eae98 !important;
+  padding:30px
+}
+.my-card-title{
+  text-align: center !important;
+  color: #fff !important;
+}
+
+.my-card-subtitled{
+  text-align: center !important;
+  font-size: 45px;
+  font-family: candara;
+  color: #fff !important;
+}
+.my-card-text{
+  text-align: center !important;
+  font-size: 18px;
+  font-family: Poppins cursive;
+  color: #fff !important;
+}
+
+.Testimonia{
+  width: 100%;
+  height: 80vh;
+  padding: 40px;
+  background:#f8f9fe;
+  text-align: center;
+  
+}
+
+
+.overlayMain{
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  
+}
+
+.overlayMain_childI{
+  flex:1 0 (40% - 10px);
+  text-align: left;
+}
+
+.overlayMain_childII{
+  flex:1 0 (40% - 10px);
+  text-align: left;
+}
+
+.Testimonia_big{
+  font-size: 40px;
+  font-family: Poppins cursive;
+  font-weight: bolder;
+  color:#1eae98;
+  text-align: center;
+}
+
+.footer{
+  width: 100%;
+  height: 50vh;
+  background-image: url('../images//nice_world.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.footer_logo{
+ width:30%;
+ margin-top:10px;
+}
+
+
+
+.overlay_footer{
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  background-color: #000;
+  opacity: 0.9;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.caroselDiv{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.carousel-indicators {
+  
+  top: 80%; /* vertical position */
+  color:#1eae98
+}
+
+.testimoniaText{
+  text-align: center;
+  font-size: 16px;
+  font-family: candara;
+  font-weight: bold;
+}
+
+
+.footer_main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: left;
+}
+.footer-text{
+  font-family: candara;
+  font-size: 16px;
+  color:#fff;
+  padding-left: 10px;
+ 
+}
+.footer_cover{
+  padding: 10px;
+
+}
+
+
+.main_menu{
+  font-family: Poppins cursive;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.About_US_All_main{
+  width:100%;
+  height: 80vh;
+  background-image: url('../images/hero_banner/slider_2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+ 
+}
+
+.About_Us_Title{
+  position: absolute;
+  margin-top: 15%;
+  padding:40px;
+  color:#fff;
+  width: 100%;
+  text-align: center;
+}
+
+
+.small_Title{
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#d5d5d5;
+  padding-left: 40px;
+
+}
+
+
+.About_Us_Title > h1{
+  font-family: Poppins Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+.Ourpeople{
+  width:100%;
+  height: 100vh;
+  background-color: #f3f6f5;
+  margin-top: 100px;
+  align-self: center;
+  padding:40px
+
+}
+.ourpeoplemain{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  
+}
+.ourpeople_text{
+  flex: 1 0 calc(21% - 20px);
+  text-align: left;
+  padding-left: 100px;
+
+}
+.ourpeople_img{
+  flex: 1 0 calc(21% - 20px);
+  padding:100px;
+}
+
+.ourPeopleTextCover{
+  margin-top: 20px;
+}
+
+.ourpeople_text > h1{
+  font-family: Prompt Arial, Helvetica, sans-serif ;
+  font-weight: bolder;
+  color: #1760a6;
+}
+.align_small_title{
+  text-align: left;
+  padding-left:0px;
+}
+
+.align_small_title_2{
+  text-align: left;
+  padding-left: 0px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.IrregularCircle_aboutus{
+
+  flex: 1 0 calc(30% - 20px);
+  border: 1px solid #1eae98;
+  border-radius: 20% 50% 30% 80% /40% 50% 35% 60%;
+  height: 300px;
+  justify-content: center;
+  background-image: url('../images/ourpeople.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+ 
+}
+
+
+
+.ourPeopleTextCover > p {
+  font-family: candara;
+}
+
+.ourvision{
+  width:100%;
+  height: 80vh;
+  padding: 40px;
+}
+.ourmission_flex_div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding:40px
+}
+.mission1{
+  flex:1 0 calc(30% - 20px);
+  text-align: left;
+  padding-left: 40px;
+  align-self: center;
+}
+.mission2{
+  flex:1 0 calc(70% - 20px);
+  text-align: left;
+  font-size: 22px;
+  padding-top:20px;
+  font-family: candara;
+  
+  
+}
+.mission1 > h1{
+  font-family: Prompt Arial, Helvetica, sans-serif ;
+  font-weight: bolder;
+  color: #1760a6;
+  padding-left: 100px;
+}
+
+.ourvalue_child > h1{
+  font-family: Prompt Arial, Helvetica, sans-serif ;
+  font-weight: bolder;
+  color: #1760a6;
+}
+
+.ourvalues{
+  width:100%;
+  height: 100vh;
+  background-color: #f8f9fe;
+  padding:40px
+}
+
+.ourvalues_card{
+  height: 150px;
+  flex: 1 0 calc(25% - 10px);
+  color: #000;
+  margin:10px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  position: relative;
+  padding:20px;
+
+}
+.value_img{
+  width:30%;
+  margin-bottom: 20px;
+}
+
+/* .ireegular_circle_value{
+  width: 150px;
+  border: 2px solid #1eae98;
+  border-radius: 20% 50% 30% 80% /40% 50% 35% 60%;
+  height: 120px;
+  justify-content: center;
+  background-image: url('../images/values//team.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-self: center;
+  align-self: center;
+} */
+
+/* @media only screen and (max-width: 1200px){
+  
+} */
+
+.OurServicePage{
+  width:100%;
+  height: 80vh;
+  background-image: url('../images/hero_banner/slider_4.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+
+.mainService{
+  width:100%;
+  height: 100vh;
+  background-color: #f8f9fe;
+  display: flex;
+  flex-wrap: wrap;
+  padding:40px;
+}
+.mainService1{
+  flex:1 0 calc(20%);
+  height: 100%;
+  text-align: left;
+  padding-top: 10%;
+}
+
+.mainService2{
+  flex:1 0 calc(80%)
+}
+.ourservices_card{
+  height: 200px;
+  flex: 1 0 calc(21% - 10px);
+  color: #000;
+  margin:5px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  position: relative;
+  padding:20px;
+  
+
+}
+.mainService1 > h1{
+  font-family: Prompt Arial, Helvetica, sans-serif ;
+  font-weight: bolder;
+  color: #1760a6;
+}
+
+.ContactUs{
+  width:100%;
+  height: 80vh;
+  background-image: url('../images/hero_banner/slider_3.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+
+.contactusMain{
+  width: 100%;
+  height: 100vh;
+  padding:40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: #fff;;
+  /* background-image: url('../images/world_map.png');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.contactmain_1{
+  flex:1 0 calc(30%);
+  text-align: left;
+ 
+}
+.contactmain_2{
+  flex:1 0 calc(60% - 20px);
+  text-align: left;
+  padding-right: 50px;
+}
+table{
+  width:100%;
+  
+  margin-top: 40px;
+}
+td{
+  padding:10px;
+  font-size: 14px;
+  font-family: Poppins;
+}
+
+.Contact_map{
+  width: 100%;
+  height: 100vh;
+  
+  padding-bottom: 40px;
+}
+
+.myquote{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding:40px;
+  flex-wrap: wrap;
+}
+
+.myquote_1{
+  flex:1 0 calc(60%);
+  align-items: left;
+  text-align: left;
+}
+
+.myquote_2{
+  flex:1 0 calc(35%);
+  align-self: center;
+  padding-left: 40px;
+}
+
+
+/* MEDIA Query */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .carousel-caption > h1{
+      font-size: 25px;
+    }
+    .slider-height{
+      height: 50vh;
+      
+    }
+    .CarouselDiv{
+      height: 50vh;
+      
+    }
+    .caption-text{
+      font-size: 14px;
+    }
+    .logo{
+      width: 50%;
+    }
+    .AboutUs{
+      margin-top:10px;
+      
+    }
+    
+    .AboutusDiv{
+      margin-top: 0px;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .aboutusImg{
+      flex:1 0 calc(100%);
+    }
+
+    .aboutusText{
+      flex: 1 0 calc(100%);
+    }
+    .services_big{
+      font-size: 25px;
+    }
+    .txt{
+      margin-top:20px
+    }
+    .faster{
+      width:100px;
+      height: 40px;
+      
+      border: 2px solid #1760a6;
+      background-color:#1760a6 ;
+      font-family: Poppins cursive;
+      border-bottom-right-radius: 15px;
+      margin: auto;
+      color: #fff;
+      font-size: 11px;
+      text-align: center;
+      top: 80%;
+      left: 58%;
+      position: absolute;
+    }
+
+    .whatwedo{
+      margin-top: 50vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      
+    }
+
+    .whatwedo_small{
+      font-size: 10px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#d5d5d5;
+    }
+    .whatwedo_big{
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      color: #1760a6;
+     
+    }
+    
+    
+    .IrregularCircle{
+      
+      width:50%;
+      
+      background-image: url('../images/whatwedo.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    
+    }
+
+    .IrregularText{
+      text-align: center;
+      flex: 1 0 calc(100%);
+      padding: 10px;
+      font-size: 12px;
+      
+    }
+    .overlay{
+      height: 50vh;
+    }
+    .howwedo_main{
+      
+      width: 100%;
+      height: 80%;
+      text-align: center;
+      padding:20px;
+      
+
+    }
+    .aboutusText_big{
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif cursive;
+      font-weight: bolder;
+      color: #fff;
+      text-align: center;
+    }
+    
+    .howwedoText_small{
+      font-size: 10px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#d5d5d5;
+      text-align: center;
+    
+    }
+
+
+    .model_howwework{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      
+    }
+    .model_howwework_details{
+      /* flex: 1 0 21%;  */
+      flex: 1 0 calc(100% - 10px);
+      margin: 5px;
+      text-align: left;
+      padding:10px;
+    }
+    
+    .model_howwework_details > span{
+      font-size: 20px;
+      font-weight: bold;
+      color:#1760a6;
+    }
+    
+    .model_howwework_details > div > span  {
+      font-size: 14px;
+      font-weight:bold;
+    }
+
+    .model_howwework_details > div{
+      font-size: 14px;
+    }
+    .servicesMain{
+      width: 100%;
+      height: 100%;
+    }
+    .service-tag{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+    .servicesDiv{
+      display: none;
+    }
+    .service-tag-i{
+      flex:1 0 calc(100%)
+    }
+
+}
+
+
+/*320-480..ends*/

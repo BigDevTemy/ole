@@ -1,0 +1,470 @@
+
+@media only screen and (max-width: 1200px) {
+    .createButtonOthers{
+      width:150px;
+      height: 40px;
+      font-size: 14px;
+      border: 2px solid #1760a6;
+      align-self: center;
+      font-family: candara;
+      border-bottom-right-radius: 15px;
+      line-height: 40px;
+      margin-top: 40px;
+      cursor: pointer;
+      text-align: center;
+      position: absolute;
+      bottom: 10px;
+    }
+    
+    .carousel-caption > h1{
+      font-size: 45px;
+    }
+  
+    .AboutusDiv{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 110px;
+      padding-right: 80px;
+      padding-top: 80px;
+    }
+  
+    .aboutusText{
+      margin-top: 20px;
+    }
+  
+    .whatwedo{
+      margin-top: 100vh;
+     
+    }
+    
+    .IrregularCircle{
+      flex: 1 0 calc(50% - 20px);
+      border: 1px solid #1eae98;
+      border-radius: 20% 50% 30% 80% /40% 50% 35% 60%;
+      height: 300px;
+      justify-content: center;
+      background-image: url('../images/whatwedo.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-self: center;
+     
+    }
+    .IrregularText{
+      font-size: 18px;
+      text-align: left;
+    }
+  
+  
+    .model_howwework{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .model_howwework_details > span{
+      font-size: 40px;
+    }
+    .howwedo_main{
+      padding: 50px;
+     
+    }
+    .servicesMain{
+      width:100%;
+      min-height: 100vh;
+      height: 100%;
+      text-align: center;
+      background-color: #F3F6F5;
+      padding:40px;
+      
+      /* padding-top:40px;
+      padding-bottom: 40px;
+      padding-left: 110px;
+      padding-right: 80px; */
+    
+    }
+    .cardimg{
+      margin-top: 10px;
+      width: 100px;
+  
+    }
+    .ourservices{
+      height: 300px;
+      flex: 1 0 calc(21% - 10px);
+      color: #000;
+      margin:10px;
+      border: 1px solid #fff;
+      background-color: #fff;
+      text-align: center;
+      position: relative;
+      padding:20px;
+    }
+    .cardBody{
+      
+      font-size: 10px;
+      font-family: candara;
+    }
+    .cardTitle{
+      padding:10px;
+      font-size: 16px;
+      font-family: candara;
+    }
+    .buttonParentDiv{
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 0px;
+      
+    }
+    .quoteDiv{
+      margin-top: 80vh;
+    }
+    .my-card-text{
+      text-align: center !important;
+      font-size: 14px;
+      font-family: Poppins cursive;
+      color: #fff !important;
+    }
+    .my-card-subtitled{
+      text-align: center !important;
+      font-size: 20px;
+    }
+   
+    .footer{
+      height: 100vh;
+    }
+    .overlay_footer{
+      height: 100vh;
+    }
+    .footer_logo{
+      width: 20%;
+    }
+  
+    #floatingInputCustom{
+      width:150%
+    }
+  
+    .logo{
+      width: 80%;
+      margin-top: 10px;
+      
+    }
+    
+   
+   
+  }
+  @media only screen and (max-width: 600px){
+    .createButtonOthers{
+      width:150px;
+      height: 40px;
+      font-size: 14px;
+      border: 2px solid #1760a6;
+      align-self: center;
+      font-family: candara;
+      border-bottom-right-radius: 15px;
+      line-height: 40px;
+      margin-top: 40px;
+      cursor: pointer;
+      text-align: center;
+      position: absolute;
+      bottom: 0px;
+    }
+    
+  
+  
+    .carousel-caption > h1{
+      font-size: 25px;
+    }
+    .carousel-caption > p{
+      font-size: 15px;
+    }
+    .AboutusDiv{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .aboutusText{
+      width: 400px;
+      text-align: left;
+      
+    }
+    .whatwedo{
+      height: 120vh;
+    }
+    .whatwedoText{
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+      
+    }
+    
+    .IrregularText{
+      flex-basis: 150%;
+      padding: 0px;
+      font-family: candara;
+      font-size: 18px;
+      margin-top: 20px;
+      text-align: justify;
+    }
+    .IrregularCircle{
+      flex-basis: 100%;
+      border: 1px solid #1eae98;
+      border-radius: 20% 50% 30% 80% /40% 50% 35% 60%;
+      height: 250px;
+      justify-content: center;
+      background-image: url('../images/whatwedo.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+    }
+    
+    
+    .model_howwework_details > span{
+      font-size: 20px;
+    } 
+  
+   
+    .services-tag{
+      flex-direction: column !important;
+      justify-content: center;
+      padding-top: 40px;
+    }
+    .transportservices{
+      font-size: 14px;
+      font-family: Poppins;
+      text-align:justify !important;
+      margin-top: 20px;
+      letter-spacing:normal;
+      width: 600px;
+      margin-left: 50px;
+      
+    }
+    .servicesDiv{
+      margin-top: 140px;
+  
+    }
+    .quoteMainDiv{
+      flex-direction: column;
+      justify-content: center;
+      
+      padding:40px;
+      
+    }
+    .form{
+      flex-basis: 25%;
+      background:#fff;
+      padding:30px;
+      text-align: left;
+      height: 100%;
+      align-items: center;
+     
+    }
+    .formText{
+      display: none;
+    }
+    .carousel_me{
+      width:100%;
+      align-self:center;
+      margin:auto;
+      padding:20px;
+      margin-top: 40px;
+    }
+    .carousel_item_me{
+      height: 50vh;
+      
+    }
+    .carousel_caption_me{
+      padding: 20px;
+      
+    }
+    .footer_main{
+      flex-direction: column;
+      margin-top: 100px;
+      text-align: center;
+      
+    }
+    #floatingInputCustom{
+      width:100%
+    }
+    .footer{
+      height: 50vh;
+    }
+    .overlay_footer{
+      height: 150vh;
+    }
+    .Ourpeople{
+      margin-top: 100vh;
+      height: 70vh;
+      flex-direction:column;
+      flex-wrap: wrap;
+    }
+    
+    .ourpeople_img{
+      display: none;
+    }
+    .ourvision{
+      padding-left: 100px;
+    }
+    .ourvalues{
+      margin-top: 10vh;
+    }
+    .servicesDiv{
+      margin-top: 0px;
+    
+    }
+    .footer_main{
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+   .footer_logo{
+     width: 50%;
+   }
+   .logo{
+     width: 50%;
+   }
+   .About_Us_Title{
+    margin-top: 40%;
+    } 
+  
+    .mainService{
+      width:100%;
+      height: 140vh;
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .mainService1{
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      padding-top: 0px;
+    }
+    
+    .mainService2{
+      width: 100%;
+    }
+    .ourservices_card{
+      width: 50%;
+    }
+  .contactusMain{
+    height: 100%;
+    background: #fff;
+  }
+  .myquote{
+    width:100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .myquote_2{
+   display: none;
+  }
+  
+  }
+  
+  
+  @media only screen and (max-width: 425px){
+  
+    .createButtonOthers{
+      width:150px;
+      height: 40px;
+      font-size: 14px;
+      border: 2px solid #1760a6;
+      align-self: center;
+      font-family: candara;
+      border-bottom-right-radius: 15px;
+      line-height: 40px;
+      margin-top: 40px;
+      cursor: pointer;
+      text-align: center;
+      position: absolute;
+      bottom: 20px;
+    }
+    
+      .whatwedo{
+        margin-top: 70vh;
+      }
+    .howwedo{
+      margin-top: 30vh;
+      height: 150vh;
+    }
+    
+    .IrregularText{
+      text-align: left;
+    }
+    .transportservices{
+      text-align: center;
+      padding:40px;
+      width: 120%;
+    }
+    .servicesDiv{
+      margin-top: 0px;
+      height: 100vh;
+    }
+    .servicesMain{
+      height: 30vh;
+    }
+   .service_home{
+     display: none;
+   }
+  
+    .quoteDiv{
+      margin-top: 0px;
+    }
+    .howwedo_main{
+      margin-top: 0px;
+    }
+  .Ourpeople{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 130vh;
+    height: 130vh;
+    width: 100%;
+  }
+  .ourvision{
+    margin-top: 70vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: justify;
+  }
+  .ourvalues{
+    margin-top: 70vh;
+  }
+  .footer{
+    margin-top: 30vh;
+  }
+  .footer_logo{
+    width:50%;
+  }
+  
+  .logo{
+    width:50%;
+  }
+  .About_Us_Title{
+    margin-top: 40%;
+  }
+  
+  .ourservices_card{
+    width:150px;
+    height: 150px;
+  }
+  .cardTitle{
+    font-size: 14px;
+  }
+  .contactusMain{
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background: #fff;
+  }
+  .myquote{
+    height: 50vh;
+  }
+  
+  }
