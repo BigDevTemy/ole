@@ -1679,7 +1679,7 @@ td{
     .mainService{
       width:100%;
       padding:0;
-      height: 130vh;
+      height: 150vh;
     }
     .mainService1{
       flex:1 0 calc(100%);
