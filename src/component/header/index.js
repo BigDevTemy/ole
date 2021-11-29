@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from '../../assets/images/logo150x150.png'
+import logo from '../../assets/images/1.png'
 import * as Icon from 'react-bootstrap-icons';
 import { Link,useLocation } from "react-router-dom";
 import { Navbar,Container,Nav,NavDropdown,Image } from "react-bootstrap";
@@ -15,11 +15,9 @@ const Index = ({contact_header})=>{
     };
     
     const trim = location.pathname.replace('/','').trim() === "" ? 'home' : location.pathname.replace('/','').trim()
-    console.log(trim)
-    
+   
     useEffect(()=>{
         window.addEventListener('scroll', handleScroll, { passive: true });
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -32,7 +30,7 @@ const Index = ({contact_header})=>{
                     <Container>
                         <Navbar.Brand href="#home" className="logoDiv">
                             <Image src={logo}  className="logo"/>
-                            
+                            <div><span className="logo_text">OceanLink</span> <span className="logo_text_2">Express</span></div>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
@@ -54,7 +52,8 @@ const Index = ({contact_header})=>{
                                 <Nav.Link href="/services"  className={scroll=== 0 ?'NavRight':'NavRightScroll'}>SERVICES</Nav.Link>
                                 <Nav.Link href="/contact_us"  className={scroll=== 0 ?'NavRight':'NavRightScroll'}>CONTACT</Nav.Link>
                                 <Nav.Link href="https://wa.me/2349040006000"  className={scroll=== 0 ?'NavRight':'NavRightScroll'}><Icon.Whatsapp  color={scroll===0? 'white':'green'} size="20"/> </Nav.Link>
-                                <Link to="/request_for_quote"><div className="quote">Quote</div></Link>
+                                <Nav.Link href="/request_for_quote"  className={scroll=== 0 ?'NavRight':'NavRightScroll'}>QUOTE</Nav.Link>
+                          
                             
                             </Nav>
                         </Navbar.Collapse>
@@ -66,7 +65,10 @@ const Index = ({contact_header})=>{
                 {contact_header ?
                     <Navbar collapseOnSelect expand="lg"  variant="dark" className={scroll === 0 ? 'NavContact': 'NavContactScroll'} fixed="top" >
                     <Container>
-                        <Navbar.Brand href="/" className="logoDiv"><Image src={logo}  className="logo"/></Navbar.Brand>
+                        <Navbar.Brand href="/" className="logoDiv">
+                            <Image src={logo}  className="logo"/>
+                            <div><span className="logo_text" style={{color:'#fff'}}>OceanLink</span> <span className="logo_text_2">Express</span></div>
+                        </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav" >
                             <Nav className="me-auto">
@@ -81,13 +83,13 @@ const Index = ({contact_header})=>{
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown> */}
                             </Nav>
-                            <Nav style={{backgroundColor:'#fff'}}>
+                            <Nav>
                                 <Link to="/" className='NavRight' >HOME</Link>
                                 <Link to="/about_us"  className='NavRight'>ABOUT US</Link>
                                 <Link to="/services" className='NavRight'  >SERVICES</Link>
                                 <Link to="/contact_us" className='NavRight' >CONTACT</Link>
                                 <a href="https://wa.me/2349040006000" target="_blank" className='NavRight'><Icon.Whatsapp  color={scroll===0? 'white':'green'} size="20"/></a>
-                                <Link to="/request_for_quote" className='NavRight' >QUOTE</Link>
+                                <Link to="/request_for_quote"  className="NavRight">QUOTE</Link>
                                 
 {/* 
                                 <Nav.Link href="/"  className={scroll=== 0 ?'NavRight':'NavRightScroll'}>HOME</Nav.Link>
@@ -105,7 +107,10 @@ const Index = ({contact_header})=>{
                 :
                     <Navbar collapseOnSelect expand="lg" className={scroll === 0 ? 'Navbar ': 'NavScroll '} fixed="top" >
                     <Container>
-                        <Navbar.Brand href="/" className="logoDiv"><Image src={logo}  className="logo"/></Navbar.Brand>
+                        <Navbar.Brand href="/" className="logoDiv">
+                            <Image src={logo}  className="logo"/>
+                            <div><span className="logo_text">OceanLink</span> <span className="logo_text_2">Express</span></div>
+                        </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
@@ -131,7 +136,7 @@ const Index = ({contact_header})=>{
                                 <Nav.Link href="/services"  className={scroll=== 0 ?'NavRight':'NavRightScroll'}>SERVICES</Nav.Link>
                                 <Nav.Link href="/contact_us"  className={scroll=== 0 ?'NavRight':'NavRightScroll'}>CONTACT</Nav.Link>
                                 <Nav.Link href="https://wa.me/2349040006000"  className={scroll=== 0 ?'NavRight':'NavRightScroll'}><Icon.Whatsapp  color={scroll===0? 'white':'green'} size="20"/> </Nav.Link> */}
-                                <Link to="/request_for_quote"><div className="quote">Quote</div></Link>
+                                <Link to="/request_for_quote"  className={scroll=== 0 ?'NavRight':'NavRightScroll'}>QUOTE</Link>
                                
                             
                             </Nav>

@@ -1,5 +1,5 @@
 import React from "react";
-import AboutusIndex from '../../../assets/images/aboutusindex.jpg'
+import AboutusIndex from '../../../assets/images/aboutusindex_old.png'
 import * as Icon from 'react-bootstrap-icons';
 import {Link} from 'react-router-dom'
 const AboutUs = ()=>{
@@ -27,7 +27,7 @@ const AboutUs = ()=>{
                     <div className="aboutHeader">
                        
                         <p className="aboutus-text1">
-                        OceanLink Express is a culmination of years of experience from several international partners that are all leaders in their respective fields. 
+                            OceanLink Express is a culmination of years of experience from several international partners that are all leaders in their respective fields. 
                         </p>
                         <p className="aboutus-text2">
                             OceanLink Express Provides advanced solutions in the shipping, logistics and clearance sectors<br/>

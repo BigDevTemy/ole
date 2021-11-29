@@ -5,8 +5,8 @@ const Index = ()=>{
         <div className="ourvision">
             <div className="ourmission_flex_div">
                 <div className="mission1">
-                    <div className="small_Title">OUR MISSION</div>
-                    <h1 className="ps-4">Our Mission</h1>
+                    <div className="small_Title ">OUR MISSION</div>
+                    <h1 className="ps-4 mission">OUR MISSION</h1>
                 </div>
                 <div className="mission2">
                     <p>To develop and maintain long and trustful relationships with our clients, thus empowering our teams’ capabilities to work ethically and diligently to deliver custom-tailored solutions.</p>
@@ -15,7 +15,7 @@ const Index = ()=>{
             <div className="ourmission_flex_div">
                 <div className="mission1">
                     <div className="small_Title">OUR VISION</div>
-                    <h1 className="ps-4">Our Vision</h1>
+                    <h1 className="ps-4 mission">OUR VISION</h1>
                 </div>
                 <div className="mission2">
                     <p>To be recognized as a <strong>PREMIER</strong> logistics and transport provider and life-transforming partner to all our customers in Nigeria..</p>

@@ -16,7 +16,8 @@ const contactreducer =(state,{payload,type})=>{
                 ...state,
                 contact:{
                     ...state.contact,
-                    loading:payload
+                    loading:payload,
+                    error:null,
                 }
             }
         case CONTACT_SUCCESS:{

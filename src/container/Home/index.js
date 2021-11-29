@@ -12,6 +12,9 @@ import Time from '../../assets/images/time.png'
 import Protection from '../../assets/images/security.png'
 
 const Index = ()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         
         <div  className="divContainer">

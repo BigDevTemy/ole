@@ -4,6 +4,7 @@ import { Form,FloatingLabel } from "react-bootstrap";
 import { GlobalContext } from "../../../context/Provider";
 import sendContact from "../../../context/actions/sendmessage";
 import { ToastContainer, toast } from 'react-toastify';
+
 import 'react-toastify/dist/ReactToastify.css';
 
 const Index = ()=>{
@@ -44,14 +45,14 @@ const Index = ()=>{
         sendContact(item)(contactDispatch);
         if(data){
             if(data.message === "Message Sent"){
-                console.log('data',data)
+                // console.log('data',data)
                 toast.success("Thanks for reaching out to us");
                 setfullname(' ')
                 setphonenumber(' ')
                 setmessage('')
             }
             else{
-                console.log('data',data)
+                
                 toast.error("An Error Occurred");
             }
         }
@@ -71,7 +72,8 @@ const Index = ()=>{
                         <td><Icon.TelephonePlus size="20" color="#1eae98"/>  </td>
                         <td>
                             <div className="small_Title align_small_title">PHONE NUMBER</div>
-                            <a style={{textDecoration:'none',color:'#000'}}  href="tel:234-904-000-6000">+234-904-000-6000</a> 
+                            <a style={{textDecoration:'none',color:'#000'}}  href="tel:234-904-000-6000">+234-904-000-6000</a><br/>
+                            <a style={{textDecoration:'none',color:'#000'}}  href="tel:234-813-062-9103">+234-813-062-9103</a> 
                         </td>
                     </tr>
                     <tr>

@@ -4,22 +4,30 @@ import Ship from'../../../assets/images/ship.png';
 import Air from'../../../assets/images/air.png';
 import * as Icon from 'react-bootstrap-icons';
 import {Link} from 'react-router-dom'
+import Button from '@restart/ui/esm/Button';
 const Services = ()=>{
     return (
         <div className="servicesMain ">
            <div className="services-tag">
-                <div className="w-100 service-tag-i" >
+                <div className="service-tag-i" >
                     <div className="howwedoText_small">OUR SERVICES</div>
-                    <div className="services_big">Our Services</div>
-                </div>
-                <div className="ps-4 mt-4 transportservices ">
-                Shipping plays a vital role in world trade and is the backbone of the world economy,
-                which makes it indispensable to the world and to meeting the challenge of the Agenda for Sustainable Development
-                   {/* <Link to="/services"> <div className="createButtonOthers">
-                        Read More <Icon.ArrowRight/>
-                    </div>
+                    <div className="whatwedo_big">Our Services</div>
+                    {/* <Link to="/services"> <div className="createButtonOthers">
+                            Read More <Icon.ArrowRight/>
+                        </div>
                     </Link> */}
-
+                </div>
+                <div className="transportservices ">
+                    Shipping plays a vital role in world trade and is the backbone of the world economy,
+                    which makes it indispensable to the world and to meeting the challenge of the Agenda for Sustainable Development.
+                <br/>
+                <Link to="/services">
+                    <Button className="mybtn">
+                         Read More
+                    </Button>
+                </Link>
+                   
+                 
                 </div>
            </div>
            <div className="servicesDiv service_home">
@@ -29,10 +37,10 @@ const Services = ()=>{
                     <div className="cardBody">
                      Let us simplify and connect your supply chain from end to end.
                     </div>
-                    <Link to="/services"> <div className="createButtonOthers">
+                    {/* <Link to="/services"> <div className="createButtonOthers">
                         Read More <Icon.ArrowRight/>
                     </div>
-                    </Link>
+                    </Link> */}
                     {/* <div className="buttonParentDiv">
                         <div className="createButton_services">
                             Read More <Icon.ArrowRight/>
@@ -45,11 +53,11 @@ const Services = ()=>{
                         <div className="cardBody">
                         90% of the total volume of global trade done by sea, We aim to provide the fastest and most economical sea shipments
                         </div>
-                        <Link to="/services"> 
+                        {/* <Link to="/services"> 
                             <div className="createButtonOthers">
                             Read More <Icon.ArrowRight/>
                             </div>
-                        </Link>
+                        </Link> */}
                         {/* <div className="buttonParentDiv">
                             <div className="createButton_services">
                                 Read More <Icon.ArrowRight/>
@@ -62,10 +70,10 @@ const Services = ()=>{
                     <div className="cardBody">
                     In today’s highly complex supply chains, speed is a key to success, send everywhere your freight.
                     </div>
-                    <Link to="/services"> <div className="createButtonOthers">
+                    {/* <Link to="/services"> <div className="createButtonOthers">
                         Read More <Icon.ArrowRight/>
                     </div>
-                    </Link>
+                    </Link> */}
                     {/* <div className="buttonParentDiv">
                         
                     </div> */}
@@ -76,10 +84,10 @@ const Services = ()=>{
                     <div className="cardBody">
                     Import & Export, we take care of the customs.
                     </div>
-                    <Link to="/services"> <div className="createButtonOthers">
+                    {/* <Link to="/services"> <div className="createButtonOthers">
                         Read More <Icon.ArrowRight/>
                     </div>
-                    </Link>
+                    </Link> */}
                     {/* <div className="buttonParentDiv">
                        
                     </div> */}

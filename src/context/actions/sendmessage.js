@@ -1,13 +1,13 @@
 import { CONTACT_LOADING,CONTACT_SUCCESS, CONTACT_ERROR} from "../../constants/actionTypes"
 import axios from '../../helpers/axios'
-export default  (item)=> (dispatch)=>{
+export default (item)=> async (dispatch)=>{
     
     dispatch({
         type:CONTACT_LOADING,
         payload:true,
     })
     console.log('item',item)
-    axios.post('/contact',JSON.stringify({
+    await axios.post('/contact',JSON.stringify({
         data:item
     }))
     .then(res=>{

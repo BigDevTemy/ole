@@ -12,6 +12,30 @@
 .slider-height{
   height: 70vh;
 }
+
+.aboutus_img{
+  border-radius: 5%;
+}
+.cardTitle_services{
+  position: absolute;
+  bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+
+}
+.logo_text{
+  font-family: Poppins;
+  font-size: 18px;
+  color:#004aad;
+  font-weight: bold;
+}
+.logo_text_2{
+  font-family: Poppins;
+  font-size: 18px;
+  color:#ff0000;
+  font-weight: bold;
+}
 .CarouselDiv{
   width:100%;
   height: 50vh;
@@ -34,9 +58,13 @@ Nav > Link{
   padding:20px;
   color:#fff;
 }
+.my-card-subtitled{
+  font-size: 25px !important;
+}
 
 .service-tag-i{
   padding-left: 50px;
+  text-align: left;
 }
 
 .carousel_me{
@@ -98,36 +126,33 @@ Nav > Link{
 
 .Navbar{
   width:'100%'; 
-  height: 100px;
+  height: 140px;
 }
 
 .NavScroll{
   width:'100%' ;
-  height: 100px;
+  height: 140px;
   background-color: #fff;
 }
 
 .NavContact{
   width:'100%' ;
-  height: 100px;
+  height: 140px;
   background-color: #1760a6;
 }
 
 .NavContactScroll{
   width:'100%' ;
-  height: 100px;
+  height: 140px;
   color: #fff;
   background-color: #1760a6;
 }
 .logo{
-  width: 80%;
+  width: 60%;
   margin-top: 10px;
   
+  
 }
-
-
-
-
 a{
   text-decoration: none;
 }
@@ -148,11 +173,13 @@ a:hover{
   padding:20px !important;
   color:#fff !important;
   text-decoration: none;
+  font-weight: bold;
 }
 .NavRightScroll{
   padding:20px !important;
   color:#000 !important;
   text-decoration: none;
+  font-weight: bold;
 }
 
 
@@ -236,8 +263,28 @@ a:hover{
 
 }
 
+.ourvalues_div{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 120;
+  position: absolute;
+  padding-right: 40px;
+
+}
+.ourservices_div_main{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 120;
+  position: absolute;
+  padding-right: 40px;
+
+}
 .ourservices{
-  height: 400px;
+  height: 300px;
   flex: 1 0 calc(21% - 10px);
   color: #000;
   margin:20px;
@@ -394,6 +441,18 @@ a:hover{
   font-family: Poppins;
   text-align:justify !important;
   padding-right: 100px;
+
+}
+
+.mybtn{
+  width:120px;
+  height: 40px;
+  border-radius: 10px;
+  border:1px solid #d5d5d5;
+  background-color: #1eae98;
+  margin-top: 10px;
+  color:#fff;
+  
 }
 
 
@@ -464,16 +523,18 @@ a:hover{
   margin-top:10px;
   font-weight: bold;
   text-align: left;
+  font-size: 18px;
 }
 .aboutus-text2{
   color: #31373F;
   font-family: candara;
   font-weight: bold;
   text-align: left;
+  font-size: 18px;
 
 }
 .aboutus-text3{
-  text-align:justify;
+  text-align:left;
   margin-bottom: 10px;
 }
 .readMoreParent{
@@ -621,7 +682,19 @@ a:hover{
 }
 
 
-
+.IrregularCircleAboutus{
+  flex: 1 0 calc(30% - 20px);
+  border: 1px solid #1eae98;
+  border-radius: 20% 50% 30% 80% /40% 50% 35% 60%;
+  height: 300px;
+  justify-content: center;
+  background-image: url('../images/about_us_new.jfif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-self: center;
+  margin-top: 50px;
+}
 
 .IrregularCircle{
   flex: 1 0 calc(30% - 20px);
@@ -860,7 +933,6 @@ a:hover{
   background-position: center;
   position: relative;
   
- 
 }
 
 .About_Us_Title{
@@ -951,8 +1023,6 @@ a:hover{
  
 }
 
-
-
 .ourPeopleTextCover > p {
   font-family: candara;
 }
@@ -1005,7 +1075,7 @@ a:hover{
 }
 
 .ourvalues_card{
-  height: 150px;
+  height: 100px;
   flex: 1 0 calc(25% - 10px);
   color: #000;
   margin:10px;
@@ -1038,6 +1108,17 @@ a:hover{
   
 } */
 
+.request{
+  width:100%;
+  height: 80vh;
+  background-image: url('../images/request-quote-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+
 .OurServicePage{
   width:100%;
   height: 80vh;
@@ -1051,7 +1132,7 @@ a:hover{
 
 .mainService{
   width:100%;
-  height: 100vh;
+  height: 120vh;
   background-color: #f8f9fe;
   display: flex;
   flex-wrap: wrap;
@@ -1069,13 +1150,13 @@ a:hover{
 }
 .ourservices_card{
   height: 200px;
-  flex: 1 0 calc(21% - 10px);
+  flex: 1 0 calc(25%);
   color: #000;
   margin:5px;
   border: 1px solid #fff;
   background-color: #fff;
   position: relative;
-  padding:20px;
+  padding:10px;
   
 
 }
@@ -1166,22 +1247,33 @@ td{
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    .navbar-collapse{
+      background-color:#1760a6;
+      opacity: 0.8;
+    }
+    .logo_text{
+      font-size: 12px;
+    }
+    .logo_text_2{
+      font-size: 12px;
+    }
+
     .carousel-caption > h1{
       font-size: 25px;
     }
     .slider-height{
-      height: 50vh;
+      height: 60vh;
       
     }
     .CarouselDiv{
-      height: 50vh;
+      height: 60vh;
       
     }
     .caption-text{
       font-size: 14px;
     }
     .logo{
-      width: 50%;
+      width: 30%;
     }
     .AboutUs{
       margin-top:10px;
@@ -1224,12 +1316,30 @@ td{
       position: absolute;
     }
 
+    .readmore{
+      width:80px;
+      height: 40px;
+      font-size: 10px;
+      
+    
+    }
+    .aboutus-text1{
+      font-size: 14px;
+      text-align: justify;
+    }
+    .aboutus-text2{
+      font-size: 14px;
+      text-align: justify;
+    }
+
     .whatwedo{
-      margin-top: 50vh;
+      margin-top: 60vh;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 50vh;
+      height: 100vh;
+      padding-top: 40px;
+      padding-bottom: 40px;
       
     }
 
@@ -1249,9 +1359,9 @@ td{
     
     
     .IrregularCircle{
-      
+      align-self: center;
+      margin-top: 100px;
       width:50%;
-      
       background-image: url('../images/whatwedo.jpg');
       background-position: center;
       background-repeat: no-repeat;
@@ -1264,7 +1374,9 @@ td{
       text-align: center;
       flex: 1 0 calc(100%);
       padding: 10px;
-      font-size: 12px;
+      font-size: 14px;
+      text-align: justify;
+      align-self: center;
       
     }
     .overlay{
@@ -1273,7 +1385,494 @@ td{
     .howwedo_main{
       
       width: 100%;
-      height: 80%;
+      height: 100%;
+      text-align: center;
+      padding:20px;
+      
+
+    }
+    .aboutusText_big{
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif cursive;
+      font-weight: bolder;
+      color: #fff;
+      text-align: center;
+    }
+    
+    .howwedoText_small{
+      font-size: 12px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#d5d5d5;
+      text-align: center;
+    
+    }
+
+
+    .model_howwework{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      
+    }
+    .model_howwework_details{
+      /* flex: 1 0 21%;  */
+      flex: 1 0 calc(100% - 10px);
+      margin: 5px;
+      text-align: left;
+      padding:10px;
+
+    }
+    
+    .model_howwework_details > span{
+      font-size: 20px;
+      font-weight: bold;
+      color:#1760a6;
+    }
+    
+    .model_howwework_details > div > span  {
+      font-size: 16px;
+      font-weight:bold;
+    }
+
+    .model_howwework_details > div{
+      font-size: 18px;
+    }
+    .servicesMain{
+      width: 100%;
+      height: 70vh;
+    }
+    .service-tag{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .servicesDiv{
+      display: none;
+    }
+    .service-tag-i{
+      flex:1 0 calc(100%);
+      padding-left: 0px;
+      text-align: center;
+    }
+    .transportservices{
+      width: 100%;
+      font-size: 16px;
+      text-align: justify;
+      padding:10px;
+      margin:0px;
+      align-self: center;
+    }
+
+    .mybtn{
+      width:100px;
+      height: 40px;
+      font-size: 12px;
+    }
+    .quoteDiv{
+      width:100%;
+      height: 100vh;
+      background-image: url('../images/quote_bg.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding:40px;
+    }
+    .form{
+     width:250px
+
+    }
+    .getInTouch{
+      font-size: 14px;
+    }
+    .quoteMainDiv{
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .formText{
+      display: none;
+    }
+   .whatwedo_small{
+     font-size: 14px;
+     margin-top: 10px;
+     text-align: left;
+   }
+   .mycard{
+     flex:1 0 calc(100%);
+     width:100%;
+   }
+   .my-card-subtitled{
+    font-size: 12px !important;
+  }
+  .my-card-text{
+    display: none !important;
+  }
+  .footer{
+    margin-top: 10vh;
+    height: 80vh;
+  }
+  .overlay_footer{
+    height: 80vh;
+  }
+  .footer_main{
+    
+    justify-content: center;
+    height: 80vh;
+  }
+
+  .footer_logo{
+    width: 20%;
+  }
+  .footer-text{
+    font-size: 12px;
+  }
+  .section1{
+    text-align: center;
+    flex: 1 0 cal(25%);
+    padding:0px;
+    font-size: 12px;
+    
+  }
+  
+    .About_US_All_main{
+      height: 50vh;
+    }
+    .About_Us_Title{
+      margin-top: 100px;
+      text-align: center;
+      
+    }
+    .aboutus-text1{
+      font-size: 12px;
+      text-align: justify;
+    }
+    .aboutus-text2{
+      font-size: 12px;
+      text-align: justify;
+    }
+    .aboutus-text3{
+      font-size: 12px;
+      text-align: justify;
+    }
+    .Ourpeople{
+      margin-top: 100vh;
+      
+    }
+    .ourpeoplemain{
+     margin-top: 0vh;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      height: 100%;
+      
+      
+      
+    }
+    .ourpeople_text{
+      flex:1 0 calc(100%);
+      text-align: left;
+      padding:0px;
+      margin: 0px;
+      
+    }
+    .ourpeople_img{
+      display: none;
+    }
+    .ourPeopleTextCover > p{
+     margin: 0px;
+     font-size: 13px;
+     text-align: justify;
+    }
+    .ourvision{
+      height: 70vh;
+      align-self: center;
+    }
+    .ourmission_flex_div{
+     
+      flex-direction: column;
+      padding: 0px;
+      text-align: left;
+      
+    }
+    .mission2{
+      font-size: 13px;
+      text-align: justify;
+    }
+
+    .ourpeople_text{
+      text-align: left;
+    }
+    .small_Title{
+      text-align: left;
+    }
+    .mission{
+      font-size: 20px;
+      text-align: center;
+      
+    }
+    .mission1{
+      
+      width: 100%;
+      
+    }
+    
+    .ourpeople_text >h1{
+      font-size: 20px;
+    }
+    .ourvalue_child{
+      
+      width: 100%;
+      padding: 0px;
+    }
+    .ourvalue_child > h1{
+      font-size: 20px;
+      text-align: center;
+      
+      padding-left: 20px;
+    }
+    .values{
+      text-align: center;
+     
+    }
+    .ourvalues{
+      text-align: left;
+      padding:20px;
+      margin: 0px;
+      height: 100vh;
+    }
+    .ourvalues_div{
+      
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      flex-wrap: wrap;
+    }
+    .ourvalues_card{
+      flex: 1 0 calc(34% - 10px);
+      align-self: center;
+      align-items: center;
+      text-align: center;
+      height: 130px;
+    } 
+
+    .cardTitle{
+      font-size: 13px;
+      padding: 10px;
+    }
+    .contactusMain{
+      height: 150vh;
+     
+    }
+
+    .myquote{
+      height: 150vh;
+    }
+    .small_Title{
+      text-align: center;
+    }
+    .mainService{
+      width:100%;
+      padding:0;
+      height: 130vh;
+    }
+    .mainService1{
+      flex:1 0 calc(100%);
+      text-align: center;
+      padding-top: 20px;
+      
+      height: 100px;  
+       
+    }
+    .mainService1 >h1{
+      font-size: 20px;
+    }
+    .About_Us_Title > h1{
+      font-size: 20px;
+    }
+    
+    .About_Us_Title > small{
+      display: none;
+    }
+   
+    .ourservices_div_main{
+      display:  block;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      
+    }
+    
+    .ourservices_card{
+      height: 120px;
+      flex: 1 0 calc(33.333%);
+      color: #000;
+      margin:5px;
+      position: relative;
+      padding:10px;
+      
+      
+    }
+    .cardTitle_services{
+      font-size: 10px;
+      
+    }
+    .value_img{
+      width: 30%;
+      align-items: center;
+    }
+    
+    .OurServicePage{
+      height: 40vh;
+    }
+    .request{
+      height: 40vh;
+    }
+    
+
+}
+
+
+/*320-480..ends*/
+
+@media only screen 
+  and (min-device-width: 481px) 
+  and (max-device-width: 600px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+   
+    .navbar-collapse{
+      background-color:#1760a6;
+      opacity: 0.8;
+    }
+
+    .carousel-caption > h1{
+      font-size: 25px;
+    }
+    .slider-height{
+      height: 70vh;
+      
+    }
+    .CarouselDiv{
+      height: 70vh;
+      
+    }
+    .caption-text{
+      font-size: 14px;
+    }
+    .logo{
+      width: 40%;
+    }
+    .AboutUs{
+      margin-top:10px;
+      height: 150vh;
+      
+    }
+    
+    .AboutusDiv{
+      margin-top: 0px;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .aboutusImg{
+      flex:1 0 calc(70%);
+    }
+    .aboutus_img{
+      width: 40%;
+      
+    }
+
+    .aboutusText{
+      flex: 1 0 calc(100%);
+
+    }
+    .services_big{
+      font-size: 25px;
+    }
+    .txt{
+      margin-top:60px
+    }
+    .faster{
+      width:150px;
+      height: 60px;
+      top: 90%;
+      left: 70%;
+      font-size: 18px;
+    
+    }
+
+    .readmore{
+      width:100px;
+      height: 40px;
+      font-size: 12px;
+      
+    
+    }
+
+    .whatwedo{
+      margin-top: 60vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      
+    }
+    .aboutus-text1{
+      font-size: 14px;
+    }
+    .aboutus-text2{
+      font-size: 14px;
+    }
+    .whatwedo_small{
+      font-size: 10px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#d5d5d5;
+    }
+    .whatwedo_big{
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      color: #1760a6;
+     
+    }
+    
+    
+    .IrregularCircle{
+      align-self: center;
+      margin-top: 50px;
+      width:50%;
+      height: 50%;
+      background-image: url('../images/whatwedo.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    
+    }
+
+    .IrregularText{
+      text-align: center;
+      flex: 1 0 calc(100%);
+      padding: 10px;
+      font-size: 18px;
+      align-self: center;
+      
+    }
+    .overlay{
+      height: 50vh;
+    }
+    .howwedo_main{
+      
+      width: 100%;
+      height: 100%;
       text-align: center;
       padding:20px;
       
@@ -1288,7 +1887,7 @@ td{
     }
     
     .howwedoText_small{
-      font-size: 10px;
+      font-size: 12px;
       font-weight: bold;
       font-family: Arial, Helvetica, sans-serif;
       color:#d5d5d5;
@@ -1313,13 +1912,13 @@ td{
     }
     
     .model_howwework_details > span{
-      font-size: 20px;
+      font-size: 25px;
       font-weight: bold;
       color:#1760a6;
     }
     
     .model_howwework_details > div > span  {
-      font-size: 14px;
+      font-size: 16px;
       font-weight:bold;
     }
 
@@ -1328,22 +1927,811 @@ td{
     }
     .servicesMain{
       width: 100%;
-      height: 100%;
+      height: 70vh;
     }
     .service-tag{
       flex-direction: column;
       justify-content: center;
     }
 
+    .service_home{
+      display: none;
+    }
+    .service-tag-i{
+      flex:1 0 calc(100%);
+      text-align: center;
+    }
+    .transportservices{
+      width: 100%;
+      font-size: 18px;
+      text-align: left;
+      padding:0px;
+      margin:0px;
+      
+    }
+
+    .mybtn{
+      width:120px;
+      height: 40px;
+      font-size: 14px;
+    }
+    .quoteDiv{
+      width:100%;
+      height: 150vh;
+      background-image: url('../images/quote_bg.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding:40px;
+    }
+    .form{
+     width:100%;
+     padding-bottom: 20px;
+
+    }
+    .getInTouch{
+      font-size: 15px;
+    }
+    .quoteMainDiv{
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+   
+    .my-card-subtitled{
+      
+      font-size: 18px !important;
+    }
+   .whatwedo_small{
+     font-size: 14px;
+     margin-top: 10px;
+     text-align: center;
+   }
+   .mycard{
+     flex:1 0 calc(100%);
+     width:100%;
+   }
+   .my-card-subtitled{
+    font-size: 12px !important;
+  }
+  .my-card-text{
+    display: none !important;
+  }
+  .footer{
+    margin-top: 5vh;
+    height: 120vh;
+  }
+  .overlay_footer{
+    height: 120vh;
+  }
+  .footer_main{
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  .footer_logo{
+    width: 30%;
+    padding: 20px;
+  }
+  .footer-text{
+    font-size: 14px;
+  }
+  .section1{
+    text-align: center;
+    flex: 1 0 cal(25%);
+    padding:0px;
+    font-size: 12px;
+    
+  }
+
+
+    .About_US_All_main{
+      height: 40vh;
+    }
+    .About_Us_Title{
+      margin-top: 100px;
+      text-align: center;
+      
+    }
+    .aboutus-text1{
+      font-size: 18px;
+      text-align: justify;
+    }
+    .aboutus-text2{
+      font-size: 18px;
+      text-align: justify;
+    }
+    .aboutus-text3{
+      font-size: 18px;
+      text-align: justify;
+    }
+    .Ourpeople{
+      margin-top: 100vh;
+      
+    }
+    .ourpeoplemain{
+     margin-top: 0vh;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      height: 100%;
+      
+      
+      
+    }
+    .ourpeople_text{
+      flex:1 0 calc(100%);
+      text-align: left;
+      padding:0px;
+      margin: 0px;
+      
+    }
+    .ourpeople_img{
+      display: none;
+    }
+    .ourPeopleTextCover > p{
+     margin: 0px;
+     font-size: 18px;
+     text-align: justify;
+    }
+    .ourvision{
+      height: 70vh;
+      align-self: center;
+    }
+    .ourmission_flex_div{
+     
+      flex-direction: column;
+      padding: 0px;
+      text-align: left;
+      
+    }
+    .mission2{
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    .ourpeople_text{
+      text-align: left;
+    }
+    .small_Title{
+      text-align: left;
+    }
+    .mission{
+      font-size: 20px;
+      text-align: center;
+      
+    }
+    .mission1{
+      
+      width: 100%;
+      
+    }
+    
+    .ourpeople_text >h1{
+      font-size: 22px;
+    }
+    .ourvalue_child{
+      
+      width: 100%;
+      padding: 0px;
+    }
+    .ourvalue_child > h1{
+      font-size: 22px;
+      text-align: center;
+      
+      padding-left: 20px;
+    }
+    .values{
+      text-align: center;
+     
+    }
+    .ourvalues{
+      text-align: left;
+      padding:20px;
+      margin: 0px;
+      height: 100vh;
+    }
+    .ourvalues_div{
+      
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      flex-wrap: wrap;
+    }
+    .ourvalues_card{
+      flex: 1 0 calc(33.3333% - 10px);
+      align-self: center;
+      align-items: center;
+      text-align: center;
+      height: 130px;
+    } 
+
+    .cardTitle{
+      font-size: 16px;
+      padding: 10px;
+    }
+    .contactusMain{
+      height: 150vh;
+     
+    }
+
+    .myquote{
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 150vh;
+    }
+    .myquote_1{
+      flex: 1 0 calc(100%);
+    }
+    .myquote_2{
+      display: none;
+    }
+    .small_Title{
+      text-align: center;
+    }
+
+    .mainService{
+      width:100%;
+      padding:0;
+      height: 130vh;
+    }
+    .mainService1{
+      flex:1 0 calc(100%);
+      text-align: center;
+      padding-top: 20px;
+      
+      height: 100px;  
+       
+    }
+    .mainService1 >h1{
+      font-size: 20px;
+    }
+    .About_Us_Title > h1{
+      font-size: 20px;
+    }
+    
+    .About_Us_Title > small{
+      display: none;
+    }
+   
+    .ourservices_div_main{
+      display:  block;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      
+    }
+    
+    .ourservices_card{
+      height: 125px;
+      flex: 1 0 calc(34.333%);
+      color: #000;
+      margin:5px;
+      position: relative;
+      padding:10px;
+      
+      
+    }
+    .cardTitle_services{
+      font-size: 14px;
+      
+    }
+    .value_img{
+      width: 20%;
+      align-items: center;
+    }
+    
+    .OurServicePage{
+      height: 40vh;
+    }
+    .request{
+      height: 40vh;
+    }
+    
+  }
+
+
+  @media only screen 
+  and (min-device-width: 601px) 
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .navbar-collapse{
+      background-color:#1760a6;
+      opacity: 0.8;
+    }
+
+    .carousel-caption > h1{
+      font-size: 35px;
+    }
+    .slider-height{
+      height: 90;
+      
+    }
+    .CarouselDiv{
+      height: 90vh;
+      
+    }
+    .caption-text{
+      font-size: 14px;
+    }
+    .logo{
+      width: 40%;
+    }
+    .AboutUs{
+      margin-top:10px;
+      height: 200vh;
+      
+    }
+    
+    .AboutusDiv{
+      margin-top: 0px;
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+    
+    .aboutusImg{
+      flex:1 0 calc(70%);
+    }
+    .aboutus_img{
+      width: 40%;
+    }
+
+    .aboutusText{
+      flex: 1 0 calc(100%);
+
+    }
+    .services_big{
+      font-size: 25px;
+    }
+    .txt{
+      margin-top:60px
+    }
+    .faster{
+      width:150px;
+      height: 60px;
+      top: 90%;
+      left: 70%;
+      font-size: 18px;
+    
+    }
+
+    .readmore{
+      width:100px;
+      height: 40px;
+      font-size: 12px;
+      
+    
+    }
+
+    .whatwedo{
+      margin-top: 60vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      
+    }
+    .aboutus-text1{
+      font-size: 18px;
+    }
+    .aboutus-text2{
+      font-size: 18px;
+    }
+    .whatwedo_small{
+      font-size: 10px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#d5d5d5;
+    }
+    .whatwedo_big{
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      color: #1760a6;
+     
+    }
+    
+    
+    .IrregularCircle{
+      align-self: center;
+      margin-top: 50px;
+      width:25%;
+      height: 50%;
+      background-image: url('../images/whatwedo.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    
+    }
+
+    .IrregularText{
+      text-align: center;
+      flex: 1 0 calc(100%);
+      padding: 10px;
+      font-size: 18px;
+      align-self: center;
+      
+    }
+    .overlay{
+      height: 120vh;
+    }
+    .howwedo_main{
+      
+      width: 100%;
+      height: 120vh;
+      text-align: center;
+      padding:20px;
+      
+
+    }
+    .aboutusText_big{
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif cursive;
+      font-weight: bolder;
+      color: #fff;
+      text-align: center;
+    }
+    
+    .howwedo{
+      height: 120vh;
+    }
+    .howwedoText_small{
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#d5d5d5;
+      text-align: center;
+    
+    }
+
+
+    .model_howwework{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      
+    }
+    .model_howwework_details{
+      /* flex: 1 0 21%;  */
+      flex: 1 0 calc(100% - 10px);
+      margin: 5px;
+      text-align: left;
+      padding:10px;
+    }
+    
+    .model_howwework_details > span{
+      font-size: 40px;
+      font-weight: bold;
+      color:#1760a6;
+    }
+    
+    .model_howwework_details > div > span  {
+      font-size: 20px;
+      font-weight:bold;
+    }
+
+    .model_howwework_details > div{
+      font-size: 20px;
+    }
+    .servicesMain{
+      width: 100%;
+      height: 70vh;
+    }
+    .service-tag{
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .servicesDiv{
       display: none;
     }
     .service-tag-i{
-      flex:1 0 calc(100%)
+      flex:1 0 calc(100%);
+      text-align: center;
+    }
+    .transportservices{
+      width: 100%;
+      font-size: 18px;
+      text-align: left;
+      padding:0px;
+      margin:0px;
+      
     }
 
-}
+    .mybtn{
+      width:120px;
+      height: 40px;
+      font-size: 14px;
+    }
+    .quoteDiv{
+      width:100%;
+      height: 150vh;
+      background-image: url('../images/quote_bg.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding:40px;
+    }
+    .form{
+     width:100%;
+     padding-bottom: 20px;
+
+    }
+    .getInTouch{
+      font-size: 15px;
+    }
+    .quoteMainDiv{
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+   
+    .my-card-subtitled{
+      
+      font-size: 18px !important;
+    }
+   .whatwedo_small{
+     font-size: 14px;
+     margin-top: 10px;
+     text-align: center;
+   }
+   .mycard{
+     flex:1 0 calc(100%);
+     width:100%;
+   }
+   .my-card-subtitled{
+    font-size: 12px !important;
+  }
+  .my-card-text{
+    display: none !important;
+  }
+  .footer{
+    margin-top: 5vh;
+    height: 120vh;
+  }
+  .overlay_footer{
+    height: 120vh;
+  }
+  .footer_main{
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  .footer_logo{
+    width: 40%;
+    padding: 20px;
+  }
+  .footer-text{
+    font-size: 16px;
+  }
+  .section1{
+    text-align: center;
+    flex: 1 0 cal(25%);
+    padding:0px;
+    font-size: 16px;
+    
+  }
+
+  
+  .About_US_All_main{
+    height: 40vh;
+  }
+  .About_Us_Title{
+    margin-top: 100px;
+    text-align: center;
+    
+  }
+  .aboutus-text1{
+    font-size: 18px;
+    text-align: justify;
+  }
+  .aboutus-text2{
+    font-size: 18px;
+    text-align: justify;
+  }
+  .aboutus-text3{
+    font-size: 18px;
+    text-align: justify;
+  }
+  .Ourpeople{
+    margin-top: 100vh;
+    
+  }
+  .ourpeoplemain{
+   margin-top: 0vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    
+    
+    
+  }
+  .ourpeople_text{
+    flex:1 0 calc(100%);
+    text-align: left;
+    padding:0px;
+    margin: 0px;
+    
+  }
+  .ourpeople_img{
+    display: none;
+  }
+  .ourPeopleTextCover > p{
+   margin: 0px;
+   font-size: 18px;
+   text-align: justify;
+  }
+  .ourvision{
+    height: 70vh;
+    align-self: center;
+  }
+  .ourmission_flex_div{
+   
+    flex-direction: column;
+    padding: 0px;
+    text-align: left;
+    
+  }
+  .mission2{
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .ourpeople_text{
+    text-align: left;
+  }
+  .small_Title{
+    text-align: left;
+  }
+  .mission{
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  .mission1{
+    
+    width: 100%;
+    
+  }
+  
+  .ourpeople_text >h1{
+    font-size: 22px;
+  }
+  .ourvalue_child{
+    
+    width: 100%;
+    padding: 0px;
+  }
+  .ourvalue_child > h1{
+    font-size: 22px;
+    text-align: center;
+    
+    padding-left: 20px;
+  }
+  .values{
+    text-align: center;
+   
+  }
+  .ourvalues{
+    text-align: left;
+    padding:20px;
+    margin: 0px;
+    height: 100vh;
+  }
+  .ourvalues_div{
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    flex-wrap: wrap;
+  }
+  .ourvalues_card{
+    flex: 1 0 calc(33.3333% - 10px);
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    height: 130px;
+  } 
+
+  .cardTitle{
+    font-size: 16px;
+    padding: 10px;
+  }
+  .contactusMain{
+    height: 150vh;
+   
+  }
+
+  .myquote{
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150vh;
+  }
+  .myquote_1{
+    flex: 1 0 calc(100%);
+  }
+  .myquote_2{
+    display: none;
+  }
+  .small_Title{
+    text-align: center;
+  }
+
+  .mainService{
+    width:100%;
+    padding:0;
+    height: 130vh;
+  }
+  .mainService1{
+    flex:1 0 calc(100%);
+    text-align: center;
+    padding-top: 20px;
+    
+    height: 100px;  
+     
+  }
+  .mainService1 >h1{
+    font-size: 20px;
+  }
+  .About_Us_Title > h1{
+    font-size: 20px;
+  }
+  
+  .About_Us_Title > small{
+    display: none;
+  }
+ 
+  .ourservices_div_main{
+    display:  block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .ourservices_card{
+    height: 125px;
+    flex: 1 0 calc(34.333%);
+    color: #000;
+    margin:5px;
+    position: relative;
+    padding:10px;
+    
+    
+  }
+  .cardTitle_services{
+    font-size: 14px;
+    
+  }
+  .value_img{
+    width: 20%;
+    align-items: center;
+  }
+  
+  .OurServicePage{
+    height: 40vh;
+  }
+  .request{
+    height: 40vh;
+  }
+  
+
+  
 
 
-/*320-480..ends*/
+  }

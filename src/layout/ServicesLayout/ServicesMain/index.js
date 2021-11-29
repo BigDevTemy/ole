@@ -16,11 +16,13 @@ const Index = ()=>{
                 <h1>Our Services</h1>
             </div>
             <div className="mainService2">
-            <div className="servicesDiv">
+            <div className="ourservices_div_main">
                     <div className="ourservices_card shadow-lg p-3 mb-5 bg-body rounded">
                         <img src={Shipment} className="value_img" />
                         <div className="ireegular_circle_value"></div>
-                        <div className="cardTitle"><b>SEA SHIPMENT</b> </div>
+                        <div className="cardTitle_services">
+                            SEA SHIPMENT
+                        </div>
                         <div className="cardBody">
                                 
                         </div>
@@ -28,7 +30,7 @@ const Index = ()=>{
                     </div>
                     <div className="ourservices_card shadow-lg p-3 mb-5 bg-body rounded">
                             <img src={AirShipment} className="value_img"  />
-                            <div className="cardTitle"><b>AIR SHIPMENT</b></div>
+                            <div className="cardTitle_services">AIR SHIPMENT</div>
                             <div className="cardBody">
                                 
                             </div>
@@ -36,7 +38,7 @@ const Index = ()=>{
                     </div>
                     <div className="ourservices_card shadow-lg p-3 mb-5 bg-body rounded">
                         <img src={DryCargo} className="value_img"  />
-                        <div className="cardTitle"><b>DRY/REFER CARGO</b></div>
+                        <div className="cardTitle_services">DRY/REFER CARGO</div>
                         <div className="cardBody">
                            
                             
@@ -47,7 +49,7 @@ const Index = ()=>{
 
                     <div className="ourservices_card shadow-lg p-3 mb-5 bg-body rounded">
                         <img src={ProjectCargo} className="value_img" />
-                        <div className="cardTitle"><b>PROJECT CARGO</b></div>
+                        <div className="cardTitle_services">PROJECT CARGO</div>
                         <div className="cardBody">
                           
                         </div>
@@ -55,7 +57,7 @@ const Index = ()=>{
                     </div>
                     <div className="ourservices_card shadow-lg p-3 mb-5 bg-body rounded">
                             <img src={Transportation} className="value_img"  />
-                            <div className="cardTitle"> <b>INTERMODAL TRANSPORTATION/HAULAGE</b></div>
+                            <div className="cardTitle_services">INTERMODAL TRANSPORTATION<br/>/ HAULAGE</div>
                             <div className="cardBody">
                                 
                             </div>
@@ -64,7 +66,7 @@ const Index = ()=>{
                     </div>
                     <div className="ourservices_card shadow-lg p-3 mb-5 bg-body rounded">
                         <img src={Storage} className="value_img"  />
-                        <div className="cardTitle"><b>WAREHOUSING/STORAGE</b></div>
+                        <div className="cardTitle_services">WAREHOUSING/STORAGE</div>
                         <div className="cardBody">
                             
                         </div>
@@ -72,7 +74,7 @@ const Index = ()=>{
                     </div>
                     <div className="ourservices_card shadow-lg p-3 mb-5 bg-body rounded">
                         <img src={CustomClearing} className="value_img"  />
-                        <div className="cardTitle"><b>CUSTOMS CLEARING</b></div>
+                        <div className="cardTitle_services">CUSTOMS CLEARING</div>
                         <div className="cardBody">
                             
                         </div>
@@ -80,7 +82,7 @@ const Index = ()=>{
                     </div>
                     <div className="ourservices_card shadow-lg p-3 mb-5 bg-body rounded">
                         <img src={Terminal} className="value_img"  />
-                        <div className="cardTitle"><b>PORTS, TERMINAL & DEPOTS</b></div>
+                        <div className="cardTitle_services">PORTS, TERMINAL & DEPOTS</div>
                         <div className="cardBody">
                        
                         </div>
